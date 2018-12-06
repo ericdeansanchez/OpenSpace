@@ -1,6 +1,6 @@
 # OpenSpace Engineering
 
-![OpenSpaceBrandBanner](assets/OpenSpaceBrandBanner.png)
+![OpenSpaceBrandBanner](docs/assets/OpenSpaceBrandBanner.png)
 
 ## Welcome to our GitHub!
 
