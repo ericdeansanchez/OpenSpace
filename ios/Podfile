@@ -7,6 +7,9 @@ target 'OpenSpace' do
 
    pod 'GoogleSignIn'
    pod 'Firebase/Core'
+   pod 'Firebase/Auth'
+   #GoogleAnalytics + GoogleAppMeasurement crashed due to version mismatch
+   pod 'GoogleAppMeasurement', '~> 5.2.0'
   # Pods for OpenSpace
   target 'OpenSpace-tvOSTests' do
     inherit! :search_paths

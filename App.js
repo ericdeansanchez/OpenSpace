@@ -1,46 +1,56 @@
-import {Body, Button, Container, Content, Header, Icon, Left, List, ListItem, Right, Switch, Text} from 'native-base';
+import {Body, Button, Container, Content, Header, Icon, Left, Right, Segment, Text, Title} from 'native-base';
 import React, {Component} from 'react';
-import {GoogleSignin, GoogleSigninButton, statusCodes} from 'react-native-google-signin';
-export default class ListIconExample extends Component {
+import firebase from 'react-native-firebase'
+import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
+
+// Calling this function will open Google for login.
+export const googleLogin =
+    async () => {
+  try {
+    // Add any configuration settings here:
+    await GoogleSignin.configure();
+
+    const data = await GoogleSignin.signIn();
+
+    // create a new firebase credential with the token
+    const credential = firebase.auth.GoogleAuthProvider.credential(
+        data.idToken, data.accessToken)
+    // login with credential
+    const currentUser = await firebase.auth().signInWithCredential(credential);
+    console.log(currentUser.user._user.displayName);
+    // console.info(JSON.stringify(currentUser.toJSON()));
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export default class SegmentOutsideHeaderExample extends Component {
   render() {
+    googleLogin();
     return (
-        <Container><Header /><Content><ListItem icon><Left><Button style = {
-          {
-            backgroundColor: '#FF9501'
-          }
-        }><Icon active name = 'plane' /></Button>
-            </Left><Body>
-        <Text>Airplane Mode</Text>
-            </Body><Right>
-        <Switch value =
-         {
-           false
-         } />
-            </Right>
-        </ListItem>
-          <ListItem icon>
-            <Left>
-              <Button style={{ backgroundColor: "#007AFF" }}>
-                <Icon active name="wifi" />
+        <Container><Header hasSegment><Left><Button transparent>
+        <Icon name = 'arrow-back' /></Button>
+                    </Left><Body>
+        <Title>Segments</Title>
+                    </Body><Right>
+        <Button transparent><Icon name = 'search' />
         </Button>
-            </Left><Body><Text>Wi -
-        Fi</Text>
-            </Body><Right><Text>
-            GeekyAnts</Text>
-              <Icon active name="arrow-forward" />
-        </Right>
-          </ListItem><ListItem icon><Left><Button style = {
-          {
-            backgroundColor: '#007AFF'
-          }
-        }><Icon active name = 'bluetooth' /></Button>
-            </Left><Body>
-        <Text>Bluetooth</Text>
-            </Body><Right>
-        <Text>On</Text>
-              <Icon active name="arrow-forward" />
-        </Right>
-          </ListItem></Content>
-      </Container>);
+                    </Right>
+        </Header>
+                <Segment>
+                    <Button first>
+                        <Text>Puppies</Text>
+        </Button>
+                    <Button>
+                        <Text>Kittens</Text>
+        </Button>
+                    <Button last active>
+                        <Text>Cubs</Text>
+        </Button>
+                </Segment><Content padder>
+        <Text>Awesome segment</Text>
+                </Content>
+        </Container>
+);
   }
 }

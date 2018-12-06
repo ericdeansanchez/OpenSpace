@@ -7,9 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@babel/runtime": "^7.2.0",
     "native-base": "^2.8.1",
     "react": "16.6.1",
-    "react-native": "0.57.7"
+    "react-native": "0.57.7",
+    "react-native-firebase": "^5.1.1",
+    "react-native-google-signin": "^1.0.1",
+    "react-navigation": "^3.0.5"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
