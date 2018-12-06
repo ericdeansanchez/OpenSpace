@@ -46,7 +46,7 @@ In order to realize a solution to this problem we sought to distill our problem 
 
 We have experimented with different technologies; our prototype consisted of a bare-bones **Node.js** web application serving mobile-style views.
 
-<div align="center"><img width="300px" height="300px" src="docs/assets/openspace2pointOh.png"></div>
+<div align="center"><img width="300px" height="350px" src="docs/assets/openspace2pointOh.png"></div>
 
 However, we wanted to make our solution easy and fun to use so we kept searching for better architecture and better tools. We eventually chose to build a real-time mobile application with [Reat-Native](https://facebook.github.io/react-native/). React-Native allows us to write one application that we can cross compile to iOS and Android platforms.
 
