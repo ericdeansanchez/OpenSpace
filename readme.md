@@ -34,7 +34,7 @@ In order to realize a solution to this problem we sought to distill our problem 
   
 * **The Decision** - does a given space fullfil _the_ need
 
-![SolutionGraphic](assets/solution_graphic.png)
+![SolutionGraphic](docs/assets/solution_graphic.png)
 
 1. A user wants to find a space
 2. Using our app they can see what is more or less available and what suits their needs
