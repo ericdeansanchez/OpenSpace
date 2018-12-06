@@ -41,3 +41,19 @@ In order to realize a solution to this problem we sought to distill our problem 
 3. Using sensor data from nearby places and neat APIs we empower our
    users.
 4. Users can then make a better-informed decision––where (and when) to go.
+
+### Architecture and Tools
+
+We have experimented with different technologies; our prototype consisted of a bare-bones **Node.js** web application serving mobile-style views.
+
+However, we wanted to make our solution easy and fun to use so we kept searching for better architecture and better tools. We eventually chose to build a real-time mobile application with [Reat-Native](https://facebook.github.io/react-native/). React-Native allows us to write one application that we can cross compile to iOS and Android platforms.
+
+We are combining the power of **Google APIs** + **Firebase** + the rich ecosystem surrounding **React-Native** to give our users general occupancy **statistics** of their first-choice space _and_ suggest nearby **alternatives**.
+
+#### Mechanics
+
+The mechanics of our application follow from our goals:
+
+1. **GET** data from APIs, sensor data, and other data sources
+2. Use **Google Maps, GeoEncoding, and Places APIs** to recommend nearby open spaces
+3. Display this dynamic real-time content
