@@ -1,6 +1,6 @@
 import {Body, Button, Container, Content, Header, Icon, Left, List, ListItem, Right, Switch, Text} from 'native-base';
 import React, {Component} from 'react';
-
+import {GoogleSignin, GoogleSigninButton, statusCodes} from 'react-native-google-signin';
 export default class ListIconExample extends Component {
   render() {
     return (
