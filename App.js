@@ -27,7 +27,7 @@ import {Image} from 'react-native';
 import firebase from 'react-native-firebase'
 import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
 
-const googlePlacesApiKey = 'AIzaSyBHk6KnouKAKNFbTnisDii1GBjtOnyCHuo';
+const googlePlacesApiKey = '****';
 const lat = 37.87156239999999;
 const lng = -122.2581763;
 const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${
