@@ -71,3 +71,7 @@ The mechanics of our application follow from our goals:
 #### The OpenSpace Team
 
 ![TheTeam](docs/assets/team.png)
+
+#### Contact
+
+Questions, Comments, and Concerns? Feel free to email us: eric@openspaceweb.org
