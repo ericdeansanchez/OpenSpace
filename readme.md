@@ -59,10 +59,25 @@ The mechanics of our application follow from our goals:
 1. **GET** data from APIs, sensor data, and other data sources
 2. Use **Google Maps, GeoEncoding, and Places APIs** to recommend nearby open spaces
 3. Display this dynamic real-time content
+   
+#### Nuts and Bolts
+
+In order to serve real-time content we need an API endpoint. In our particular use-case we will have to create an API to serve our app data from **UCB library sensors**. Once that is finished we can make a ```fetch``` call to our API and use the return values to **populate** the **occupancy** values on openspaceweb.org.
+
+##### Obstacles
+
+I wanted to completely rewrite our application from our old [mock up](https://ericdeansanchez.github.io/OpenSpaceMock/) into a nice and shiny mobile application. However, things didn't go exactly as planned due to scheduling mixups. Bummer.
+
+So, I began writing a [React app](https://github.com/ericdeansanchez/OpenSpaceWeb) (vanilla react web app) to deploy/launch it same day. However, due to some unknown-unknowns becoming known, **decisions were made**.
+
+In order to demonstrate [our solution](www.openspaceweb.org), I wrote some javascript and html––as calling ```fetch``` from a react app is not the same as ```fetch```ing **natively**.
+
+I ```fetch``` some data from [Google Places API](https://developers.google.com/places/web-service/intro) and display it in the browser. **Easy**. Serving an API to myself, from myself, eh... Also **easy**. Just time consuming. So that is still in progress.
 
 #### Iterations
 
 [OpenSpace Mock Up](https://ericdeansanchez.github.io/OpenSpaceMock/)
+[OpenSpace Web App Code](https://github.com/ericdeansanchez/OpenSpaceWeb)
 
 Check out our web API **@** www.openspaceweb.org
 
