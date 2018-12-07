@@ -59,3 +59,15 @@ The mechanics of our application follow from our goals:
 1. **GET** data from APIs, sensor data, and other data sources
 2. Use **Google Maps, GeoEncoding, and Places APIs** to recommend nearby open spaces
 3. Display this dynamic real-time content
+
+#### Iterations
+
+[OpenSpace Mock Up](https://ericdeansanchez.github.io/OpenSpaceMock/)
+
+#### Data Explorations
+
+[OpenSpace Data](https://github.com/ericdeansanchez/OpenSpaceData)
+
+#### The OpenSpace Team
+
+![TheTeam](docs/assets/team.png)
