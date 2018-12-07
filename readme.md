@@ -74,6 +74,10 @@ In order to demonstrate [our solution](www.openspaceweb.org), I wrote some javas
 
 I ```fetch``` some data from [Google Places API](https://developers.google.com/places/web-service/intro) and display it in the browser. **Easy**. Serving an API to myself, from myself, eh... Also **easy**. Just time consuming. So that is still in progress.
 
+![Road Map](/docs/assets/roadmap.png)
+
+Writing apps is difficult. Launching a successful startup while writing an app is difficult, but necessary. These things are especially difficut when quality is a concern.
+
 #### Iterations
 
 [OpenSpace Mock Up](https://ericdeansanchez.github.io/OpenSpaceMock/)
