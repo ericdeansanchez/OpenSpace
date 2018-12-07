@@ -87,6 +87,8 @@ Check out our web API **@** www.openspaceweb.org
 
 #### Mobile App Progress
 
+We have secured our applications authentication setup using **OAuth2.0** via ```react-native-google-signin``` and ```react-native-firebase```.
+
 <div align="center"><img height="600px" src="docs/assets/reactAppProgress.png"></div>
 
 #### Data Explorations
