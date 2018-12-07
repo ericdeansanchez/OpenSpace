@@ -63,8 +63,8 @@ export default class FooterTabsIconTextExample extends Component {
             'http://www.lib.berkeley.edu/hours/system/pictures/123/medium/doe.jpg?1309378443'
       }} />
                                 <Body>
-                                    <Text>NativeBase</Text>
-                                    <Text note>GeekyAnts</Text>
+                                    <Text>Doe Memorial Library</Text>
+                                    <Text note></Text>
                                 </Body>
                             </Left>
                         </CardItem>
@@ -86,7 +86,7 @@ export default class FooterTabsIconTextExample extends Component {
                             <Body>
                                 <Button transparent>
                                     <Icon active name="chatbubbles" />
-                                    <Text>4 Comments</Text>
+                                    <Text>4 Notifs</Text>
                                 </Button>
                             </Body>
                             <Right>

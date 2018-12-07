@@ -64,6 +64,10 @@ The mechanics of our application follow from our goals:
 
 [OpenSpace Mock Up](https://ericdeansanchez.github.io/OpenSpaceMock/)
 
+#### Mobile App Progress
+
+<div align="center"><img height="600px" src="docs/assets/reactAppProgress.png"></div>
+
 #### Data Explorations
 
 [OpenSpace Data](https://github.com/ericdeansanchez/OpenSpaceData)
