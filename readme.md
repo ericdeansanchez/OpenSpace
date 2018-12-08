@@ -2,7 +2,7 @@
 
 ![OpenSpaceBrandBanner](docs/assets/OpenSpaceBrandBanner.png)
 
-![For Tett]()
+[For Tett]()
 
 ## Welcome to our GitHub!
 
