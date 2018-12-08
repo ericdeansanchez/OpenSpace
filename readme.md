@@ -112,7 +112,7 @@ Here we have the libraries that show ```open_now = false``` to ```occupany: 0```
 
 ### How We Got Here
 
-We chained together some API calls. The basic idea was to get the Places API, combine it with our data, then present it to our users.
+We chained together some API calls. The basic idea was to get the Places API data, combine it with our data, then present it to our users.
 <div align="center"><img src="docs/assets/collection.png"></div>
 
 We compiled the calls into a collection on **Postman**:
@@ -139,6 +139,8 @@ On startup our app request a user to sign in using **Google OAuth2.0**; we are l
 
 And Here is a view of the results of what we get back from the authentication process.
 <div align="center"><img src="docs/assets/scrubbed_auth_shot.png"></div>
+
+While our **mobile** app is in progress we starting to host our services [here]. It is static github pages site. However, we have set up a **Digital Ocean** project. Just have to figure out how to make our same api calls from a deployed react web app.
 
 #### Contact
 
