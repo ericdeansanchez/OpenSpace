@@ -2,6 +2,8 @@
 
 ![OpenSpaceBrandBanner](docs/assets/OpenSpaceBrandBanner.png)
 
+![For Tett]()
+
 ## Welcome to our GitHub!
 
 We are a location services company passionate about time and space. That is, our focus is saving you time, energy, and other resources by finding you a space.
@@ -102,3 +104,8 @@ We have secured our applications authentication setup using **OAuth2.0** via ```
 #### Contact
 
 Questions, Comments, and Concerns? Feel free to email us: eric@openspaceweb.org
+
+#### The Tangled Web of Web APIs
+
+![Marker on OpenSpace (dot) org](docs/assets/plain_markers.png)
+![Marker on OpenSpace (dot) org](docs/assets/marker_w_window.png)
