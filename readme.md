@@ -101,11 +101,26 @@ We have secured our applications authentication setup using **OAuth2.0** via ```
 
 ![TheTeam](docs/assets/team.png)
 
+##### The Tangled Web of Web APIs
+
+Here we place markers on the map by making a ```fetch``` call to **Google Places API**.
+![Marker on OpenSpace (dot) org](docs/assets/plain_markers.png)
+
+The work we are trying to do is to add an endpoint that serves our volume data via library sensor (which we don't have access to, yet).
+Here we have the libraries that show ```open_now = false``` to ```occupany: 0```.
+![Marker on OpenSpace (dot) org](docs/assets/marker_w_window.png)
+
+##### How We Got Here
+
+![Collection](docs/assets/collection.png)
+![CollectionRun](docs/assets/collection_running.png)
+![Postman](docs/assets/libs_from_postman.png)
+![More Postman](docs/assets/libs_from_postman.png)
+![Test To Top Result](docs/assets/test_postman_to_top_result.png)
+![Geometry](docs/assets/geometry_and_ratings.png)
+![We love passing testsss](docs/assets/tests_passed_postman.png)
+
+
 #### Contact
 
 Questions, Comments, and Concerns? Feel free to email us: eric@openspaceweb.org
-
-#### The Tangled Web of Web APIs
-
-![Marker on OpenSpace (dot) org](docs/assets/plain_markers.png)
-![Marker on OpenSpace (dot) org](docs/assets/marker_w_window.png)
