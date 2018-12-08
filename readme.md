@@ -120,14 +120,16 @@ We compiled the calls into a collection on **Postman**:
 
 ![CollectionRun](docs/assets/collection_running.png)
 
+Within our tests we did a little bit of exploration:
 
 ![Postman](docs/assets/libs_from_postman.png)
 
-Results
-![More Postman](docs/assets/libs_from_postman.png)
-![Test To Top Result](docs/assets/test_postman_to_top_result.png)
-![Geometry](docs/assets/geometry_and_ratings.png)
 ![We love passing testsss](docs/assets/tests_passed_postman.png)
+
+We used **Twitter's** messaging API to mock/test how we would handle notifying our users when spaces on campus opened up.
+
+<div align="center"><img src="docs/assets/test_postman_to_top_result.png"></div>
+<div align="center"><img src="docs/assets/geometry_and_ratings.png"></div>
 
 
 #### Contact
