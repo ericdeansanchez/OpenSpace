@@ -101,7 +101,7 @@ We have secured our applications authentication setup using **OAuth2.0** via ```
 
 ![TheTeam](docs/assets/team.png)
 
-##### The Tangled Web of Web APIs
+### The Tangled Web of Web APIs
 
 Here we place markers on the map by making a ```fetch``` call to **Google Places API**. This is currently being hosted **@** openspaceweb.org
 <div align="center"><img src="docs/assets/plain_markers.png"></div>
@@ -110,7 +110,7 @@ The work we are trying to do is to add an endpoint that serves our volume data v
 Here we have the libraries that show ```open_now = false``` to ```occupany: 0```.
 <div align="center"><img src="docs/assets/marker_w_window.png"></div>
 
-##### How We Got Here
+### How We Got Here
 
 We chained together some API calls. The basic idea was to get the Places API, combine it with our data, then present it to our users.
 <div align="center"><img src="docs/assets/collection.png"></div>
@@ -130,6 +130,15 @@ We used **Twitter's** messaging API to mock/test how we would handle notifying o
 <div align="center"><img src="docs/assets/test_postman_to_top_result.png"></div>
 <div align="center"><img src="docs/assets/geometry_and_ratings.png"></div>
 
+## Mobile App
+
+On startup our app request a user to sign in using **Google OAuth2.0**; we are leveraging the **Firebase** APIs to facilitate the authentication:
+<div align="center"><img src="docs/assets/on_startup_native.png">
+
+<div align="center"><img src="docs/assets/firebaseapi.png"></div>
+
+And Here is a view of the results of what we get back from the authentication process.
+<div align="center"><img src="docs/assets/scrubbed_auth_shot.png"></div>
 
 #### Contact
 
