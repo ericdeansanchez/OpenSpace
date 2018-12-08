@@ -114,12 +114,16 @@ Here we have the libraries that show ```open_now = false``` to ```occupany: 0```
 
 We chained together some API calls. The basic idea was to get the Places API, combine it with our data, then present it to our users.
 ![Collection](docs/assets/collection.png)
+
+
 We compiled the calls into a collection on **Postman**:
 
 ![CollectionRun](docs/assets/collection_running.png)
 
 
 ![Postman](docs/assets/libs_from_postman.png)
+
+Results
 ![More Postman](docs/assets/libs_from_postman.png)
 ![Test To Top Result](docs/assets/test_postman_to_top_result.png)
 ![Geometry](docs/assets/geometry_and_ratings.png)
