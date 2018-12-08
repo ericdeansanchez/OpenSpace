@@ -142,6 +142,8 @@ And Here is a view of the results of what we get back from the authentication pr
 
 While our **mobile** app is in progress we starting to host our services [here]. It is static github pages site. However, we have set up a **Digital Ocean** project. Just have to figure out how to make our same api calls from a deployed react web app.
 
+<div align="center"><img src="docs/assets/digital_ocean.png"></div>
+
 #### Contact
 
 Questions, Comments, and Concerns? Feel free to email us: eric@openspaceweb.org
