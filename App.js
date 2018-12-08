@@ -1,33 +1,31 @@
-import {Body, Button, Card, CardItem, Container, Content, Footer, FooterTab, Header, Icon, Left, Right, Text, Thumbnail} from 'native-base';
-/*
-// Calling this function will open Google for login.
+import { Body, Button, Card, CardItem, Container, Content, Footer, FooterTab, Header, Icon, Left, Right, Text, Thumbnail } from 'native-base';
+
 export const googleLogin =
     async () => {
-  try {
-    // Add any configuration settings here:
-    await GoogleSignin.configure();
+        try {
+            // Add any configuration settings here:
+            await GoogleSignin.configure();
 
-    const data = await GoogleSignin.signIn();
+            const data = await GoogleSignin.signIn();
 
-    // create a new firebase credential with the token
-    const credential = firebase.auth.GoogleAuthProvider.credential(
-        data.idToken, data.accessToken)
-    // login with credential
-    const currentUser = await firebase.auth().signInWithCredential(credential);
-    console.log(currentUser.user._user.displayName);
-    // console.info(JSON.stringify(currentUser.toJSON()));
-  } catch (e) {
-    console.error(e);
-  }
-}
-*/
+            // create a new firebase credential with the token
+            const credential = firebase.auth.GoogleAuthProvider.credential(
+                data.idToken, data.accessToken)
+            // login with credential
+            const currentUser = await firebase.auth().signInWithCredential(credential);
+            console.log(currentUser.user);
+            // console.info(JSON.stringify(currentUser.toJSON()));
+        } catch (e) {
+            console.error(e);
+        }
+    }
 
-import React, {Component} from 'react';
-import {Image} from 'react-native';
+import React, { Component } from 'react';
+import { Image } from 'react-native';
 import firebase from 'react-native-firebase'
-import {GoogleSignin, GoogleSigninButton} from 'react-native-google-signin';
+import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
 
-const googlePlacesApiKey = '****';
+const googlePlacesApiKey = 'AIzaSyBHk6KnouKAKNFbTnisDii1GBjtOnyCHuo';
 const lat = 37.87156239999999;
 const lng = -122.2581763;
 const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${
@@ -36,32 +34,33 @@ const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${
 
 
 export default class FooterTabsIconTextExample extends Component {
-  fetchSpace() {
-    return fetch(url)
-        .then((response) => response.json())
-        .then((responseJson) => {
-          console.log(responseJson);
-          return responseJson;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-  }
-  render() {
-    this.fetchSpace();
+    fetchSpace() {
+        return fetch(url)
+            .then((response) => response.json())
+            .then((responseJson) => {
+                console.log(responseJson);
+                return responseJson;
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
+    render() {
+        googleLogin();
+        this.fetchSpace();
         return (
             <Container>
                 <Header />
-                
+
                 <Content>
                     <Card>
                         <CardItem>
                             <Left>
                                 <Thumbnail source={
-      {
-        uri:
-            'http://www.lib.berkeley.edu/hours/system/pictures/123/medium/doe.jpg?1309378443'
-      }} />
+                                    {
+                                        uri:
+                                            'http://www.lib.berkeley.edu/hours/system/pictures/123/medium/doe.jpg?1309378443'
+                                    }} />
                                 <Body>
                                     <Text>Doe Memorial Library</Text>
                                     <Text note></Text>
@@ -70,11 +69,11 @@ export default class FooterTabsIconTextExample extends Component {
                         </CardItem>
                         <CardItem cardBody>
                             <Image source={
-      {
-        uri:
-            'http://www.lib.berkeley.edu/hours/system/pictures/123/medium/doe.jpg?1309378443'
-      }} style={
-      { height: 200, width: null, flex: 1 }} />
+                                {
+                                    uri:
+                                        'http://www.lib.berkeley.edu/hours/system/pictures/123/medium/doe.jpg?1309378443'
+                                }} style={
+                                    { height: 200, width: null, flex: 1 }} />
                         </CardItem>
                         <CardItem>
                             <Left>
@@ -94,7 +93,7 @@ export default class FooterTabsIconTextExample extends Component {
                             </Right>
                         </CardItem>
                     </Card>
-                    </Content>
+                </Content>
                 <Footer>
                     <FooterTab>
                         <Button vertical>
