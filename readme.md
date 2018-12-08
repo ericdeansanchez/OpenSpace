@@ -113,18 +113,17 @@ Here we have the libraries that show ```open_now = false``` to ```occupany: 0```
 ##### How We Got Here
 
 We chained together some API calls. The basic idea was to get the Places API, combine it with our data, then present it to our users.
-![Collection](docs/assets/collection.png)
-
+<div align="center"><img src="docs/assets/collection.png"></div>
 
 We compiled the calls into a collection on **Postman**:
 
-![CollectionRun](docs/assets/collection_running.png)
+<div align="center"><img src="docs/assets/collection_running.png"></div>
 
 Within our tests we did a little bit of exploration:
 
-![Postman](docs/assets/libs_from_postman.png)
+<div align="center"><img src="docs/assets/libs_from_postman.png"></div>
 
-![We love passing testsss](docs/assets/tests_passed_postman.png)
+<div align="center"><img src="docs/assets/tests_passed_postman.png"></div>
 
 We used **Twitter's** messaging API to mock/test how we would handle notifying our users when spaces on campus opened up.
 
