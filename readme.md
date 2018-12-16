@@ -147,5 +147,3 @@ While our **mobile** app is in progress we are starting to host our services [he
 #### Contact
 
 Questions, Comments, and Concerns? Feel free to email us: eric@openspaceweb.org
-
--[] list item
